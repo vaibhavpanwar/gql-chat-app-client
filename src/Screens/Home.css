@@ -1,0 +1,113 @@
+.home-wrapper {
+  display: grid;
+  width: 80%;
+  grid-template-columns: auto auto auto auto;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0 30px;
+
+  height: 100%;
+}
+
+.home-chat-groups {
+  border: 5px solid rgba(255, 255, 255, 0.88);
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.home-chat-groups-heading {
+  color: white;
+  z-index: 2;
+  font-weight: 700;
+  padding: 20px;
+  font-size: 20px;
+}
+.home-chat-groups-content {
+  color: white;
+  z-index: 2;
+  font-size: 17px;
+  text-align: justify;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-wrapper {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home-wrapper {
+    grid-template-columns: auto auto;
+    width: 70%;
+    gap: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home-wrapper {
+    grid-template-columns: auto;
+    width: 100%;
+    grid-gap: 10px;
+    gap: 18px;
+    padding: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home-chat-groups {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.form-container {
+  width: 65%;
+  margin: 2rem auto;
+}
+
+.form-group {
+  max-width: 40rem;
+  margin: auto;
+  padding: 10px;
+}
+
+.form-group input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  height: 35px;
+  border-radius: 9px;
+  padding: 8px;
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+.form-group label {
+  font-size: 18px;
+}
+
+.form-group input[type="submit"] {
+  background-color: transparent;
+  border: 1.5px solid #000;
+  color: #000;
+  font-weight: bold;
+  padding-bottom: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form-group input[type="submit"]:hover {
+  background-color: #000;
+  border: 1.5px solid transparent;
+  color: #fff;
+}

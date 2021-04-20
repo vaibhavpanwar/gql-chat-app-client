@@ -1,0 +1,5 @@
+export const messageConstants = {
+  FETCH_MESSAGES: "FETCH_MESSAGES",
+  ADD_MESSAGE: "ADD_MESSAGE",
+  FETCH_MESSAGES_FAIL: "FETCH_MESSAGES_FAIL",
+};
